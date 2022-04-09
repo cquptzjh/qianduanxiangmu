@@ -1,0 +1,103 @@
+div{
+    /* display: block; */
+}
+.page2{
+    width: 1519px;
+    margin: auto;
+    display: flex;
+    height: 721px;
+    /* align-items: center;
+    justify-content: center; */
+    position: relative;
+
+}
+.box{
+    position: relative;
+    width: 1519px;
+    height: 721px;
+    /* overflow-x: hidden; */
+    /* border: 1px red solid; */
+}
+#imglist{
+    width: 500%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    /* transition: .2s; */
+    /* left: -1519px; */
+}
+.zhuti-right{
+    width: 500px;
+}
+.zhuti-right-top{
+    font-size: 50px;
+    margin: 50px 0 40px;
+}
+.zhuti-right-bottom{
+    font-size: 30px;
+}
+.zhuti-left img{
+    position: relative;
+    display: inline-block;
+}
+.box img{
+    width: 500px;
+}
+.lunbotu-page1,.lunbotu-page2,.lunbotu-page3,.lunbotu-page4,.lunbotu-page5{
+    position: relative;
+    float: left;
+}
+.lunbotu-page1-zhuti,.lunbotu-page2-zhuti,.lunbotu-page3-zhuti,.lunbotu-page4-zhuti,
+.lunbotu-page5-zhuti{
+    width: 1100PX;
+    height: 450PX;
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%,-55%); */
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 209.5px;
+    /* margin: 209.5px; */
+}
+#imglist{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: flex!important;
+    justify-content: center;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding-left: 0;
+    list-style: none;
+}
+.btn{
+    position: relative;
+    /* display: inline-block; */
+    margin: 0px 3px;
+    width: 30px;
+    height: 10px;
+    border-radius: 20px;
+    /* flex: 0 1 auto; */
+    text-indent: -999px;
+    background-color: #505050;
+    opacity: .3;
+    /* transition: all .5s; */
+    /* cursor: pointer; */
+    background-position: -20px 0;
+}
+.btn-active {
+    position: relative;
+    /* display: inline-block; */
+    margin: 0px 3px;
+    width: 40px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: #505050;
+    /* flex: 0 1 auto; */
+    /* text-indent: -999px; */
+    background-color: #505050;
+    /* transition: all .5s; */
+}

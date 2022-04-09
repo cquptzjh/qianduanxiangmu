@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加入信管工作室</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../font/css/all.css">
+    <script src="../assets/jquery.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../jQuery Lightbox插件/css/simplelightbox.css">
+<script src="./186/js/jquery-1.11.3.min.js"></script>
+<script src="./186/js/simple-lightbox.min.js"></script>
+<script>
+    $(function(){
+        $('.dowebok a').simpleLightbox();
+    });
+    </script>
+<script src="./ZJH-HomeWork/assets/jquery.js" type="text/javascript"></script>
+    
+<style>
+    body{
+        background-color: black;
+        /* overflow-Y: hidden; */
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    background-color: #fff;
+    font-feature-settings: "tnum","tnum";
+    width: 1519px;
+    margin: auto;
+    }
+    html {
+    --antd-wave-shadow-color: #1890ff;
+    --scroll-bar: 0;
+}
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    /* -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: rgba(0,0,0,0); */
+}
+
+    .kaiduan{
+    position: relative;
+    width: 100%;
+    height: 100Vh;
+    min-height: 680PX;
+    max-height: 840PX;
+    margin-bottom: 100PX;
+    overflow: hidden;
+    }
+    .nav{
+    width: 100%;
+    height: 10%;
+    line-height: 10%;
+    padding: 10PX 30PX;
+    display: flex;
+    justify-content: space-between;
+    /* line-height: 10%; */
+    /* padding: 10PX 30PX; */
+    margin: 10px 30px;
+    margin-right: auto;
+    /* display: flex;
+    justify-content: space-between; */
+   }
+   .cloth {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -2;
+    background-color: rgba(65,65,65,.4);
+}
+   .nav-left{
+      float: left; 
+      height: 100%;
+    display: flex;
+    align-items: center;                                                                                                             
+   }
+   *, :after, :before {
+    box-sizing: border-box;
+}
+/* div{
+    white-space: nowrap;
+} */
+   .nav-right{
+       /* margin-left :1000px;
+       height: 100%;
+    display:flex;
+    margin: 0px;
+    align-items: center;
+    overflow: hidden;
+    float: right;
+    right: 10px;
+    position: relative;
+    right: 100px;
+    justify-content: space-between; */
+    width: 100%;
+    height: 10%;
+    line-height: 10%;
+    padding: 10PX 30PX;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    margin-right: 30px;
+   }
+   li{
+       float: right;
+   }
+   .nav-right-a{
+    margin-left :auto;
+    height: 1%;
+}
+   .logo{
+       width: 170px;
+       height: auto;
+   }
+   .video1{
+       width: 100%;
+       position: absolute;
+    top: 0;
+    z-index: -10;
+   }
+   li a:hover{
+       color: rgba(140, 140, 143, 0.904)
+   }
+   li a {
+    color: #fff;
+    font-size: 17px;
+    margin-right: 15PX;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    transition: color .3s;
+    /* -webkit-text-decoration-skip: objects;
+    user-select: none;*/
+} 
+.covervid-video {
+position: absolute;
+top: 0;
+left: 0;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index:-10;
+}
+/* .covervid-wrapper{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url(../images/4第一帧图片.jpg) no-repeat;
+    background-size: cover;
+} */
+.mainTitle-wrap {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.mainTitle {
+    min-width: 700PX;
+    margin-bottom: 100PX;
+    text-align: center;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    top: -30px;
+}
+.mainTitle div:first-child {
+    font-size: 30PX;
+}
+.mainTitle div:nth-child(2) {
+    font-size: 50PX;
+}
+.mainTitle-subtitle {
+    width: 80%;
+    letter-spacing: 23px;
+    text-indent: 23px;
+    font-size: 14px;
+    line-height: 17px;
+    opacity: .8;
+    margin: 14PX auto 0;
+    position: relative;
+}
+.mainTitle-subtitle:before,.mainTitle-subtitle:after{
+    content: "";
+    display: block;
+    width: 74px;
+    height: 2px;
+    position: absolute;
+    top: calc(50% - 1px);
+    background-image: linear-gradient(270deg,hsla(0,0%,100%,0),#fff 47%,hsla(0,0%,100%,0));
+}
+.mainTitle-subtitle:after{
+    position: relative;
+    right: -500px; 
+    top: -12px;
+}
+.mainTitle-button-words{
+    color: currentColor;
+    }
+    .ant-btn-lg {
+    height: 40px;
+    padding: 6.4px 15px;
+    font-size: 16px;
+    border-radius: 2px;
+}
+.mainTitle-button-words:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+}
+.mainTitle-button {
+    line-height: 1.5715;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    background-image: none;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
+    cursor: pointer;
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    height: 40px;
+    padding: 4px 15px;
+    font-size: 14px;
+    border-radius: 20px;
+    color: rgba(0,0,0,.85);
+    background: #fff;
+    border: 1px solid #d9d9d9;
+}
+button, select {
+    text-transform: none;
+}
+button {
+    margin: 0;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+    position: relative;
+    top: 40px;
+}
+
+
+button {
+    /* -webkit-writing-mode: horizontal-tb !important; */
+    /* font-style: ;
+    font-variant-ligatures: ;
+    font-variant-caps: ;
+    font-variant-numeric: ;
+    font-variant-east-asian: ;
+    font-weight: ;
+    font-stretch: ;
+    font-size: ;
+    font-family: ; */
+    text-rendering: auto;
+    color: -internal-light-dark(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: center;
+    cursor: default;
+    height: 40px;
+    padding: 6.4px 15px;
+    font-size: 16px;
+}
+.mainTitle-button:hover{
+    outline: 1PX #1890ff solid;
+}
+.mainTitle-button a{
+    color: black;
+}
+.mainTitle-button a:hover{
+    color: #1890ff;
+}
+.topage1{
+    width: 40PX;
+    height: 40PX;
+    border-radius: 50%;
+    outline: 1px white solid;
+    margin:560px auto 0px;
+}
+.iconfont {
+    font-family: "iconfont"!important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 30PX;
+}
+.xuxian{
+    box-sizing: border-box;
+    margin: 0;
+    color: #1f2329;
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    list-style: none;
+    font-feature-settings: "tnum";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: .2vw;
+    padding: 0 0 0 2px;
+
+}
+.xuxian:after {
+    content: "";
+    display: block;
+    position: relative;
+    height: 36px;
+    left: 50%;
+    transform: translateX(-150%);
+    border-left: 1px dashed #fff;
+    top: 14px;
+}
+.box {
+    position: relative;
+    left: 0px;
+    overflow:hidden;
+    width: 100%;
+    margin: 100px auto;
+    display: flex;
+    height: 721px;
+}
+
+#imglist {
+    width: 500%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+}
+
+#imglist li {
+    float: left;
+    margin: 0 209.5px;
+}
+
+#btnlist{
+    width: 100%;
+    left: 680px;
+    top: 500px;
+    position:absolute;
+    list-style: none;
+}
+
+#btnlist li{
+    text-align: center;
+    float: left;
+    margin: 0px 3px;
+    width: 30px;
+    height: 10px;
+    border-radius: 20px;
+    background-color: #505050;
+    text-indent: -9999px;
+}
+.zhuti-right{
+    width: 500px;
+}
+.zhuti-right-top{
+    font-size: 50px;
+    margin: 50px 0 40px;
+}
+.zhuti-right-bottom{
+    font-size: 30px;
+}
+.zhuti-left img{
+    position: relative;
+    display: inline-block;
+}
+.box img{
+    width: 500px;
+}
+.lunbotu-page1,.lunbotu-page2,.lunbotu-page3,.lunbotu-page4,.lunbotu-page5{
+    position: relative;
+    float: left;
+}
+.lunbotu-page1-zhuti,.lunbotu-page2-zhuti,.lunbotu-page3-zhuti,.lunbotu-page4-zhuti,
+.lunbotu-page5-zhuti{
+    width: 1100PX;
+    height: 450PX;
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%,-55%); */
+    display: flex;
+    justify-content: space-between;
+    /* margin: 100px 209.5px; */
+    /* margin: 209.5px; */
+}
+.wenzi-toleft{
+    color: #585858ef;
+}
+#xiangxia{
+    animation-name: xiangxia;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+
+}
+@keyframes xiangxia {
+    from{
+        margin-top: 13px;
+    }
+    to{
+        margin-top: 17px;
+    }
+}
+.max{width: 15px;;height:auto;
+  position: absolute;
+}
+.min{width:100px;height:auto;}
+
+</style>
+
+<!-- <script>
+	$(function(){
+$('#img').click(function(){
+
+$(this).toggleClass('min');
+$(this).toggleClass('max');
+});
+});
+</script> -->
+<!-- <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+<script src="covervid.min.js"></script> -->
+</head>
+<div class="juzhong">
+<div class="header">
+    <a id="header"></a>
+  <div class="kaiduan">
+       <div class="covervid-wrapper">    
+           <video class="covervid-video" autoplay loop poster="https://lf3-cdn-tos.bytescm.com/obj/ttfe/ATSX/mainland/video-poster_1576231362701.png">        
+               <source src="http://mislab.web.cloudendpoint.cn/static/media/shouyeshipin-little.d7167e47.mp4"> 
+               <source src="./ZJH-HomeWork/assets/shouyeshipin-little.mp4">         
+           </video>
+        </div>
+
+        
+      <div class="cloth"></div>
+      <div class="nav">
+        <div class="nav-left">
+           <a href="http://mislab.web.cloudendpoint.cn/">
+             <div class="nav-img">
+                 <img class="logo" src="../assets/logo.png" alt="logo1">
+             </div> 
+           </a>
+        </div> 
+        <div class="nav-right">
+            <div class="nav-right-a">
+                <ul>
+                    <li><a href="#page1">关于我们</a></li>
+                    <li><a href="#page2">部门介绍</a></li>
+                    <li><a href="#page3">产品介绍</a></li>
+                    <li><a href="#page4">成员动态</a></li>
+                    <li><a href="#page5">招新流程</a></li>
+                </ul>
+            </div>
+
+        </div> 
+      </div>
+      <div class="mainTitle-wrap">
+          <div class="mainTitle">
+              <div>信管工作室&nbsp;·&nbsp;2021年度邀请函</div>
+              <div>想和优秀的你&nbsp;&nbsp;&nbsp;&nbsp;一起改变世界</div>
+              <div class="mainTitle-subtitle">JOIN MISLAB</div>
+              <button type="button" class="mainTitle-button">
+                  <a href="#page5"><span class="mainTitle-button-words">加入我们</span></a>
+              </button>
+            </div>
+        </div>
+       <div class="topage1">
+        <a href="#page1"class="iconfont">
+           <div class="babababa">
+        <!-- <span class="iconfont"> -->
+           
+                <i id="xiangxia" class="fas fa-arrow-down" style="color: white;font-size: 26px;position: relative;right: -10px;top: -5px;"></i>
+            
+            </div></a>
+        <!-- </span> -->
+       </div>
+       <div class="xuxian"></div>
+   </div>
+</div>
+<div class="main">
+  <a id="page1"></a>
+  <div class="abus-bgc">
+      <div class="abus-wrap">
+          <div class="abus-middle">
+              <div class="abus-middle-left">
+                  <div class="abus-middle-left-title">
+                      <div class="abus-middle-left-suptitle abus-middle-left-suptitle-show">
+                          关于我们
+                        </div>
+                        <pre class="abus-middle-left-subtitle abus-middle-left-subtitle-show">
+    信管工作室成立于2008年
+    是一个以发展内部成员专业技能与专业素养、提升信管专业
+    技术氛围的学生组织。不断探索、实践新的技术体系,在十余年
+    的成长过程当中,逐渐完善自身技术体系,扩大团队规模。
+    我们希望并也一直在努力将一些成功经验和有趣的团队文化
+    传播出去影响更多的人。
+</pre>
+</div>
+<div class="abus-middle-left-subtitle-label">
+    <img src="http://mislab.web.cloudendpoint.cn/static/media/us.7e49b8c3.png" alt="us" class="abus-middle-left-us">
+    <div class="wenziwww">
+    <div><span class="abus-middle-left-subtitle-label-little bm-show">百名工程师</span></div>
+    <div>
+    <span class="abus-middle-left-subtitle-label-little cx-show">创新</span></div>
+    <div>
+    <span class="abus-middle-left-subtitle-label-little rc-show">人才培养</span></div>
+    <div>
+    <span class="abus-middle-left-subtitle-label-little js-show">技术应用</span></div>
+    <div>
+    <span class="abus-middle-left-subtitle-label-little nq-show">年轻</span></div>
+    <div>
+    <span class="abus-middle-left-subtitle-label-little fx-show">分享日</span></div>
+    <div>
+    <span class="abus-middle-left-subtitle-label-little hk-show">黑客马拉松文化周</span></div>
+    <div>
+    <span class="abus-middle-left-subtitle-label-little zh-show">周会</span></div>
+    </div>
+</div>
+</div>
+<div class="abus-middle-right">
+    <pre class="abus-middle-right-suptitle abus-middle-right-suptitle-show">
+    信管工作室永远都是一个温暖积极的大家庭
+    这里承载着勤奋、进步、友爱、关怀、和谐与温馨
+    这里汇聚了优秀的学长学姐,在学习和生活上伴你同行
+    这里诞生了卓越的技术,新颖的产品和以学习至上的优秀理念
+</pre>
+<div class="abus-middle-right-bgpic-wrap abus-middle-right-bgpic-wrap-show">
+    <div class="ant-image">
+        <a href="http://mislab.web.cloudendpoint.cn/static/media/members.ddaf2e34.png">
+            <img id="img" alt="如果图片没有加载出来!请同学们把学长学姐脑补好看一点!拜托了!" class="ant-image-img abus-middle-right-bgpic" src="http://mislab.web.cloudendpoint.cn/static/media/members.ddaf2e34.png" style="height: 313px;">
+        </a>
+        <!-- <img id="img" alt="如果图片没有加载出来!请同学们把学长学姐脑补好看一点!拜托了!" class="ant-image-img abus-middle-right-bgpic" src="http://mislab.web.cloudendpoint.cn/static/media/members.ddaf2e34.png" style="height: 313px;"> -->
+        <div class="ant-image-mask"><div class="ant-image-mask-info">
+            <span role="img" aria-label="eye" class="anticon anticon-eye">
+                <svg viewBox="64 64 896 896" focusable="false" data-icon="eye" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                    <path d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z">
+                    </path>
+                </svg>
+            </span>Preview
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div></div>
+<a id="page2"></a>
+<div class="introduce">
+   <div class="introduce-title">
+       <span class="introduce-title-inner">
+           部门介绍
+       </span>
+   </div>
+   <div class="box">
+    <ul id="imglist" style=" transition: all .5s;">
+        <li style=" transition: all .5s;"><div class="lunbotu-page5" style=" transition: all .5s;">
+
+            <div class="lunbotu-page5-zhuti" style=" transition: all .5s;">
+              <div class="zhuti-left">
+                  <img src="http://mislab.web.cloudendpoint.cn/static/media/jiqixuexi.b66f2646.png">
+              </div>
+              <div class="zhuti-right">
+                 <div class="zhuti-right-top">机器学习部</div>
+                 <div class="zhuti-right-bottom">机器学习从从历史数据中学习规律，将规律应用到未来中。我们致力于研究如何
+                    通过计算的手段，利用数据构建模型，量化过去，预测未来。</div>
+              </div>
+            </div>   
+             
+        </div></li>
+        <li style=" transition: all .5s;"><div class="lunbotu-page1" style=" transition: all .5s;">
+            
+            <div class="lunbotu-page1-zhuti" style=" transition: all .5s;">
+              <div class="zhuti-left">
+                  <img src="http://mislab.web.cloudendpoint.cn/static/media/anzhuo.48c79b63.png">
+              </div>
+              <div class="zhuti-right">
+                 <div class="zhuti-right-top">Android开发部</div>
+                 <div class="zhuti-right-bottom">Android开发是指从事Android系统操作应用和各种Android平台功能应用，
+                     以安卓平台为对象，通过Android studio来布局设计界面与接口实现功能从而达到开发手机软件app。</div>
+              </div>
+            </div>              
+        </div></li>
+        <li style=" transition: all .5s;"><div class="lunbotu-page2" style=" transition: all .5s;">
+            
+            <div class="lunbotu-page2-zhuti" style=" transition: all .5s;">
+              <div class="zhuti-left">
+                  <img src="http://mislab.web.cloudendpoint.cn/static/media/qianduan.36806750.png">
+              </div>
+              <div class="zhuti-right">
+                 <div class="zhuti-right-top">Web开发部</div>
+                 <div class="zhuti-right-bottom">前端即网站前台部分，运行在PC端，移动端等浏览器上展现给用户浏览的网页。
+                    前端开发人员可以使用完美的动效设计和前端技术，给用户带来极高的页面视觉体验和用户交互体验。</div>
+              </div>
+            </div>  
+                        
+        </div></li>
+        <li style=" transition: all .5s;">
+            <div class="lunbotu-page3" style=" transition: all .5s;">
+            <div class="lunbotu-page3-zhuti" style=" transition: all .5s;">
+              <div class="zhuti-left">
+                  <img src="http://mislab.web.cloudendpoint.cn/static/media/houduan.e236a33d.png">
+              </div>
+              <div class="zhuti-right">
+                 <div class="zhuti-right-top">后端开发部</div>
+                 <div class="zhuti-right-bottom">后端开发指的是运行在后台并且控制前端的内容，它负责程序设计架构以及数据库管理和处理相关的业务逻辑。
+                    它主要考虑的是对于业务的控制和处理，功能的实现以及数据的操作。</div>
+              </div>
+            </div>            
+        </div>
+    </li>
+        <li style=" transition: all .5s;"> 
+            <div class="lunbotu-page4" style=" transition: all .5s;">
+            <div class="lunbotu-page4-zhuti" style=" transition: all .5s;">
+              <div class="zhuti-left">
+                  <img src="http://mislab.web.cloudendpoint.cn/static/media/chanpin.0a934026.png">
+              </div>
+              <div class="zhuti-right">
+                 <div class="zhuti-right-top">产品设计部</div>
+                 <div class="zhuti-right-bottom">捕捉事物间逻辑，倾听用户们需求，结合各平台数据，设计最好用产品。来产品策划部,
+                    培养更缜密的思维，学习产品设计，将从道术器三个层面，建立自己与互联网产品的亲密联系。</div>
+              </div>
+            </div>             
+        </div></li>
+    </ul>
+
+    <ul id="btnlist" >
+        <li class="btn active" style=" transition: all .5s;">1</li>
+        <li class="btn" style=" transition: all .5s;">2</li>
+        <li class="btn" style=" transition: all .5s;">3</li>
+        <li class="btn" style=" transition: all .5s;">4</li>
+        <li class="btn" style=" transition: all .5s;">5</li>
+    </ul>
+</div>
+</div>
+</div>
+<!-- </div> -->
+<a id="page3"></a>
+<div class="page3">
+   <div class="shuibian">
+    <div class="page3-1">
+        <div class="prd-left-h1">ERP虚拟运营系统</div>
+        <div class="prd-left-h2">系统在信管必修课上长期使用</div>
+        <div class="prd-left-text">通过构建一个虚拟的市场环境, 让受训者充当企业的CEO,进行企业的模拟运营。 通过此虚拟过程,让受训者体会到如何管理企业 中的物资流动、资金流动和信息流动,以及相互之间的制约与转换关系</div>
+        <div class="prd-left-bottom">
+            <div class="ant-image">
+                <img alt="图片" class="ant-image-img prd-left-erp" src="http://mislab.web.cloudendpoint.cn/static/media/erp.a52c6f75.png">
+            </div>
+        </div>
+    </div>
+    <div class="page3-2">
+        <div class="prd-right-top prd-right-top-show">
+            <div class="prd-right-top-left">
+                <span class="prd-right-top-left-cpjs-title">产品介绍</span>
+            </div><div class="prd-right-top-right">
+                <span class="prd-right-top-right-cpjs-detail">工作室目前主要有六个项目。
+                    <br>分别是ERP虚拟运营系统，邮问必答，基于大数据的骨质质量评估系统，路径规划系统，智能广告识别项目，作业系统，以及其他小项目，用于保证工作室同学手里都可以利用项目进行实战学习。
+                </span>
+            </div>
+        </div>
+        <div class="prd-right-bottom prd-right-bottom-show">
+            <div class="prd-right-bottom-left">
+                <div class="ant-image">
+                    <img alt="图片" class="ant-image-img prd-right-bottom-left-youwen" src="http://mislab.web.cloudendpoint.cn/static/media/youwen.4724cf1a.png">
+                </div>
+            </div>
+            <div class="prd-right-bottom-right">
+                <div class="prd-right-bottom-right-h1">邮问必答</div>
+                <div class="prd-right-bottom-right-h2">服务于重庆邮电大学学生处学业辅导中心</div><div class="prd-right-bottom-right-text">项目招募学业优秀、乐于助人的志愿者，针对数理类基础课程、<br>英语公共课程和专业课程面向全校同学提供答疑服务，解决同学学习中的具体学业问题，搭建学习讨论交流平台，构建人人好学和人人学好的良好氛围。</div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+<a id="page4"></a>
+<div class="page4-bgc">
+  <div class="page4-wrap">
+    <div class="page4-top">
+      <span>
+          成员动态
+      </span>
+    </div>
+    <div class="page4-middle">
+       <div class="page4-middle-left">
+        <div class="member-middle-left-top">
+            <span>优秀学长采访</span>
+        </div>
+        <div class="member-middle-left-bottom">
+            <video src="http://mislab.web.cloudendpoint.cn/static/media/xuezhangcaifang.8e21cd7d.mp4" autoplay="" loop="" controls="" class="member-middle-left-bottom-vedio" poster="./static/media/lbw.de567d59.png" webkit-playsinline="true" playsinline="true" x5-playsinline="" x-webkit-airplay="allow" x5-video-player-type="h5" x5-video-player-fullscreen="false">
+            </video>
+        </div>
+       </div>
+       <div class="page4-middle-right">
+        <div class="wenzi-toleft">
+           <marquee direction=left  scrolldelay="11" class="xiangzuo yidong1">陈嘉君—中移物联网</marquee>
+           <marquee direction=left scrolldelay="50"  class="xiangzuo yidong2">雷光龙—思客技术</marquee>
+           <marquee direction=left scrolldelay="500"   class="xiangzuo yidong3">程楷—凡乐科技</marquee>
+           <marquee direction=left  scrolldelay="900"  class="xiangzuo yidong4">曹禺-重庆移动</marquee>
+           <marquee direction=left scrolldelay="40"   class="xiangzuo yidong5">李煦—中移物联网</marquee>
+           <marquee direction=left scrolldelay="7"   class="xiangzuo yidong6">雷鹏—美团</marquee>
+           <marquee direction=left scrolldelay="50"   class="xiangzuo yidong7">李敏—中信银行</marquee>
+           <marquee direction=left  scrolldelay="50"  class="xiangzuo yidong8">百聪敏—腾讯</marquee>
+           <marquee direction=left  scrolldelay="70"  class="xiangzuo yidong9">吕海—阿里巴巴</marquee>
+           <marquee direction=left scrolldelay="29"   class="xiangzuo yidong10">肖航—YEX</marquee>
+           <marquee direction=left  scrolldelay="1"  class="xiangzuo yidong11">曾祥雯—绿盟科技</marquee>
+           <marquee direction=left scrolldelay="30"   class="xiangzuo yidong12">王欣瑜—云兴维智</marquee>
+           <marquee direction=left scrolldelay="80"   class="xiangzuo yidong13">唐德刚—蘑菇街</marquee>
+           <marquee direction=left  scrolldelay="510"  class="xiangzuo yidong14">曹强—绿盟科技</marquee>
+           <marquee direction=left scrolldelay="5"   class="xiangzuo yidong15">朱珍珍—杏树林</marquee>
+        </div>
+        <div class="wenzi-toleft" style="position: absolute;top: 0;">
+           <marquee direction=left  scrolldelay="500"  class="xiangzuo yidong16">左逸飞—科大讯飞</marquee>
+           <marquee direction=left scrolldelay="900"   class="xiangzuo yidong17">刘启丽—第四范式</marquee>
+           <marquee direction=left  scrolldelay="2"  class="xiangzuo yidong18">冯迪—蚂蚁金服</marquee>
+           <marquee direction=left scrolldelay="10"   class="xiangzuo yidong19">苏丹—阿里巴巴</marquee>
+           <marquee direction=left  scrolldelay="60"  class="xiangzuo yidong20">张永聪—小米</marquee>
+           <marquee direction=left  scrolldelay="390"  class="xiangzuo yidong21">黄若星—字节跳动</marquee>
+           <marquee direction=left  scrolldelay="20"  class="xiangzuo yidong22">刘晓梅—美丽屋</marquee>
+        </div>
+        <div class="wenzi-toright" style="position: absolute;top: 0;">
+            <marquee direction=right  scrolldelay="10"  class="xiangyou yidong1">袁乙文—字节跳动</marquee>
+            <marquee direction=right scrolldelay="50"   class="xiangyou yidong2">李博文—字节跳动</marquee>
+            <marquee direction=right  scrolldelay="1"  class="xiangyou yidong3">王昊岩—字节跳动</marquee>
+            <marquee direction=right  scrolldelay="590"  class="xiangyou yidong4">李俭奇—字节跳动</marquee>
+            <marquee direction=right  scrolldelay="190"  class="xiangyou yidong5">邓思远—阿里巴巴</marquee>
+            <marquee direction=right  scrolldelay="90"  class="xiangyou yidong6">姚秋鸿—邮科通信</marquee>
+            <marquee direction=right  scrolldelay="590"  class="xiangyou yidong7">曾钰洁—保研电子科技大学</marquee>
+            <marquee direction=right scrolldelay="50"   class="xiangyou yidong8">蒋璐遥—保研重庆大学</marquee>
+            <marquee direction=right  scrolldelay="390"  class="xiangyou yidong9">杨青—杭州有赞科技</marquee>
+            <marquee direction=right  scrolldelay="20"  class="xiangyou yidong10">何海源—字节跳动</marquee>
+            <marquee direction=right  scrolldelay="530"  class="xiangyou yidong11">方青—字节跳动</marquee>
+        </div>
+        <div class="wenzi-toright" style="position: absolute;top: 0;">
+            <marquee direction=right scrolldelay="500" class="xiangyou yidong12">张金胜—阿里巴巴</marquee>
+            <marquee direction=right scrolldelay="620"  class="xiangyou yidong13">韩雨潇—百度</marquee>
+            <marquee direction=right  scrolldelay="450" class="xiangyou yidong14">粱焕勋—oppo</marquee>
+            <marquee direction=right  scrolldelay="150" class="xiangyou yidong15">马里杰—thoughtworks</marquee>
+            <marquee direction=right  scrolldelay="590" class="xiangyou yidong16">戴林甫—华为</marquee>
+            <marquee direction=right  scrolldelay="50" class="xiangyou yidong17">毛家杰—随手科技</marquee>
+            <marquee direction=right  scrolldelay="100" class="xiangyou yidong18">魏超—猪八戒</marquee>
+            <marquee direction=right  scrolldelay="300" class="xiangyou yidong19">张怡斐—华为</marquee>
+            <marquee direction=right  scrolldelay="90" class="xiangyou yidong20">周军—京东</marquee>
+            <marquee direction=right scrolldelay="80" class="xiangyou yidong21">牛勤艳—海尔小额贷款</marquee>
+            <marquee direction=right scrolldelay="340"  class="xiangyou yidong22">罗琴—途风网</marquee>
+            <marquee direction=right   scrolldelay="190" class="xiangyou yidong22">付一洋—声网Agora</marquee>
+            
+
+        </div>
+       </div>
+    </div>
+ </div>
+</div>
+<a id="page5"></a>
+<div class="page5">
+    <div class="prc-wrap">
+        <div class="prc-top">
+            <div class="prc-top-left prc-top-process">
+                <img src="..\assets\liucheng1.png" alt="图片" class="prc-top-img">
+                <div class="prc-top-h">
+                    <div class="prc-top-h1">报名/预习</div>
+                    <div class="prc-top-h2">8月中旬—9月中旬</div>
+                </div>
+            </div>
+            <div class="prc-top-icon">
+                <i class="iconfont prc-top-icon-i"><i class="fas fa-arrow-right"></i></i>
+            </div>
+            <div class="prc-top-middle prc-top-process">
+                <img src="..\assets\liucheng2.png" alt="图片" class="prc-top-img">
+                <div class="prc-top-h">
+                    <div class="prc-top-h1">招新/培训</div>
+                    <div class="prc-top-h2">9月中旬—12月中旬</div>
+                </div></div>
+                <div class="prc-top-icon">
+                    <i class="iconfont prc-top-icon-i"><i class="fas fa-arrow-right"></i></i></div>
+                <div class="prc-top-right prc-top-process">
+                    <img src="..\assets\liucheng3.png" alt="图片" class="prc-top-img">
+                    <div class="prc-top-h">
+                        <div class="prc-top-h1">offer/项目</div>
+                        <div class="prc-top-h2">12月中旬—长期</div>
+                    </div>
+                </div>
+            </div>
+            <div class="prc-middle-1">
+                <a href="https://www.wjx.top/vj/Q0qa2uE.aspx">
+                    <img src="..\assets\jiaru.png" alt="图片" class="prc-middle-1-img">
+                </a>
+            </div>
+            <div class="prc-middle-2">
+                <div class="prc-middle-2-title">想和优秀的你&nbsp;&nbsp;一起改变世界</div>
+            </div>
+            <div class="prc-bottom">
+                <div class="prc-bottom-item">
+                    <a href="https://www.wjx.top/vj/Q0qa2uE.aspx">
+                        <span class="prc-bottom-text">报名投递</span>
+                    </a>
+                </div>
+                <div class="prc-bottom-item">
+                    <span class="prc-bottom-text">学员系统</span>
+                </div>
+                <div class="prc-bottom-item">
+                    <a href="https://jq.qq.com/?_wv=1027&amp;k=LkGcB3dU">
+                        <span class="prc-bottom-text">招新咨询</span>
+                    </a>
+                </div>
+            </div>
+            <div class="prc-title" style=" display:inline-block;font-size: 30PX;position: absolute;top: 10PX;left: -120PX;"}>招新流程</div>
+        </div>
+</div>
+<div class="footer-bgc">
+    <div class="footer-wrap">
+        <div class="footer-middle">
+            <div class="footer-middle-left">
+                <img src="..\assets\logo1.png" alt="logo" class="footer-middle-left-logo">
+            </div>
+            <div class="footer-middle-line-left">                
+            </div>
+            <div class="footer-middle-middle">
+                <div class="footer-middle-middle-left">
+                    <div class="footer-middle-middle-left-left">
+                        <span class="footer-middle-middle-left-left-title">联系我们</span>
+                        <span>
+                            <a href="https://www.wjx.top/vj/Q0qa2uE.aspx">报名投递</a>
+                        </span>
+                        <span>
+                            <a href="https://jq.qq.com/?_wv=1027&amp;k=LkGcB3dU">招新咨询</a>
+                        </span>
+                    </div>
+                    <div class="footer-middle-middle-left-right">
+                        <span class="footer-middle-middle-left-right-title">我们的产品</span>
+                        <span>ERP虚拟运营系统</span>
+                        <span>邮问必答</span>
+                        <span>邮读书馆</span>
+                        <span>学员系统</span>
+                    </div>
+                </div>
+                <div class="footer-middle-middle-right">
+                    <span>互联网时代早已到来</span>
+                    <span>欢迎加入</span>
+                </div>
+            </div>
+            <div class="footer-middle-line-right">
+          </div>
+          <div class="footer-middle-right">
+              <div class="ant-image">
+                  <img alt="二维码" class="ant-image-img footer-middle-right-qrcode" src="http://mislab.web.cloudendpoint.cn/static/media/qrcode.47167a54.png"><div class="ant-image-mask"><div class="ant-image-mask-info"><span role="img" aria-label="eye" class="anticon anticon-eye"><svg viewBox="64 64 896 896" focusable="false" data-icon="eye" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M942.2 486.2C847.4 286.5 704.1 186 512 186c-192.2 0-335.4 100.5-430.2 300.3a60.3 60.3 0 000 51.5C176.6 737.5 319.9 838 512 838c192.2 0 335.4-100.5 430.2-300.3 7.7-16.2 7.7-35 0-51.5zM512 766c-161.3 0-279.4-81.8-362.7-254C232.6 339.8 350.7 258 512 258c161.3 0 279.4 81.8 362.7 254C791.5 684.2 673.4 766 512 766zm-4-430c-97.2 0-176 78.8-176 176s78.8 176 176 176 176-78.8 176-176-78.8-176-176-176zm0 288c-61.9 0-112-50.1-112-112s50.1-112 112-112 112 50.1 112 112-50.1 112-112 112z"></path></svg></span>Preview</div></div></div><span>QQ扫码咨询</span></div></div>
+                  <div class="footer-footer"><span class="frist-chlid">地址：重庆市南岸区崇文路2号重庆邮电大学经济管理学院2907</span><span class="second-child">邮箱：join@mislab.team</span></div>
+    </div>
+</div>
+<div class="back-to-top-icon ">
+    <a href="#header" style="color: black;">
+        <i class="fas fa-arrow-up" ></i>
+    </a>
+    
+</div>
+</div>
+
+</body>
+<script>
+    var index = 0;
+var imglist = document.getElementById('imglist');
+var btnlist = document.getElementById('btnlist');
+var arrbtn = btnlist.getElementsByTagName('li');
+
+function btnchange(index) {
+    for (var i = 0; i < 5; i++) {
+        if (i == index) {
+            arrbtn[i].style.backgroundColor = '#505050' ;
+            arrbtn[i].style.width = '40px';
+        }
+        else {
+            arrbtn[i].style.backgroundColor = 'rgba(0,0,0,0.2)';
+            arrbtn[i].style.width = '30px';
+        }
+    }
+}
+for (var i = 0; i < 5; i++) {
+    arrbtn[i].num = i;
+    arrbtn[i].onmouseover = function () {
+        index = this.num;
+        imglist.style.left = index * (-1519) + 'px';
+        clearInterval(t);
+        btnchange(index);
+        this.onmouseout = function () {
+            t = setInterval(imgchange, 2000);
+        }
+    }
+
+}
+
+function imgchange() {
+    if (index == 4)
+        index = -1;
+    index++;
+    imglist.style.left = index * (-1519) + 'px';
+    btnchange(index);
+}
+var t = setInterval(imgchange, 2000);
+
+</script>
+</html>
